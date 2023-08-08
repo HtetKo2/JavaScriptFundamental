@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h1>Constructor</h1>
+
+    <script>
+
+
+        let mgmgBio= new function () {
+
+            this.name = "Mg Mg";
+            this.age = 19; 
+        }
+        console.log(mgmgBio)
+
+        let kyawkyawBio={};
+            kyawkyawBio.name= "Kyaw KYaw";
+            kyawkyawBio.age=20;
+        console.log(kyawkyawBio);
+
+
+
+        //-------constructor
+
+        function personBio (name,age){
+            this.name=name;
+            this.age=age;
+        }
+
+        let aungaungBio= new personBio("Aung Aung",19);
+        console.log(aungaungBio)
+
+        let kokoBio =new personBio("Ko Ko",20);
+        console.log(kokoBio);
+
+
+        function carDetail(name,date,model,color){
+            this.name=name;
+           this.manufactureDate=date;
+            this.model=model;
+            this.color=color
+        }
+        let bnwDetail=new carDetail("BNW",2023,"GL","Black");
+        console.log(bnwDetail);
+
+        let toyotaDetail = new carDetail("Toyot",2023,"Hilux","White");
+        console.log(toyotaDetail);
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

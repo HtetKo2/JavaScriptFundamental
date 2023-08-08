@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class_es6</title>
+</head>
+<body>
+    <h1>class_es6</h1>
+
+    <script>
+
+
+        //------class_es6
+
+        class Person{
+            constructor(name,age){
+                this.name=name;
+                this.age=age;
+            }
+            getAge(){
+                console.log(this.age)
+            }
+            static getName(){
+                console.log("hello")
+            }
+        }
+        let person_1=new Person("koko",23);
+        console.log(person_1.getAge());
+        console.log(Person.getName());   // static
+
+
+
+        class Parent{
+            constructor(father,mother){
+                this.father=father;
+                this.mother=mother;
+            }
+            greeting(){
+                console.log("HEllo")
+            }
+            sayHi(){
+                alert("Hi")
+            }
+            static sayHello(){
+                alert("Hello")
+            }
+        }
+         let parent_1= new Parent("U Hla","Daw Mya")
+           // console.log(parent_1);
+
+
+        //-------Extend class
+
+        class children extends Parent{
+            constructor(father,mother,childName){
+                super(father,mother);                                   //****super = parent----// sub=child
+                this.chilName=childName;
+            }
+            
+        }
+
+        let child_1= new children("U Hla","Daw Mya","Ko Ko");
+        console.log(child_1.greeting());
+        //child_1.sayHi();
+        // Parent.sayHello();   //**********static
+
+    </script>
+    
+</body>
+</html>

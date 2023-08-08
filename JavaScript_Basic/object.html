@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <script>
+        //------object
+
+                    let person = {
+                        name:   "Aung Aung",
+                        age:    19,
+                        job:    "programmer",
+
+                        //****Three Way of Functions */
+                        // getName:function(){},
+                        // getName:()=>{},
+                        // getName(){},
+
+                        getName(name){
+                            //console.log("i am " + name)
+                            return ("i am " + name);
+                        },
+
+                    };
+                    console.log(person.name);
+                    console.log(person.age);
+                    console.log(person.job);
+
+                    person.age = 29;
+                    console.log(person.age);
+
+
+                    //console.log(person.getName("Htet Ko Ko"));
+
+                    var result = person.getName("Htet Ko K0")
+
+                    console.log(result)
+
+
+
+
+                    let car={
+                        name: "BNW",
+                        ManufactureDate : 2020,
+                        drive(){
+                            return ("My "+ this.name +" "+ this.ManufactureDate+ " is driving"
+                            //this = car
+                            )
+                        },
+                        stop(){
+                            return ("My "+ this.name +" "+ this.ManufactureDate+ " is stopping"
+                            //this = car
+                            )
+                        },
+                        testing(){
+                            console.log(this)
+                        }
+                        
+                    }
+
+
+
+
+
+                    var driving = car.drive();
+                    console.log(driving);
+                    var stopping = car.stop();
+                    console.log(stopping);
+
+
+                    
+                    let newPerson={};
+                    newPerson.name="Htet Ko Ko";
+                    newPerson.age=19;
+                    newPerson.job="programmer";
+                     console.log(newPerson);
+
+
+                    // let newPerson1;
+                    // name="Htet Ko Ko";
+                    // age=19;
+                    // job="programmer";
+                    
+                    // console.log(newPerson1);
+
+
+                     console.log(this); 
+                     console.log(car.testing());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

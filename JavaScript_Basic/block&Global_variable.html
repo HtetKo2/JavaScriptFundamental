@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global_variable</title>
+</head>
+<body>
+    <h1>Global_variable</h1>
+    <script>
+        let age = 19; //global variable
+        if (true) {
+            console.log(age); //block variable
+            let bornYear=2000;
+            console.log(bornYear)
+            if (true) {
+                console.log(age);
+                console.log(bornYear);
+                
+            }
+        }
+
+       // console.log(bornYear)
+    </script>
+</body>
+</html>

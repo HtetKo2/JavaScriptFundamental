@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+</head>
+<body>
+    <h1>setInterval</h1>
+    <script>
+
+        // setInterval(()=>{
+        //     //console.log("Hello");
+        //     //document.write("Hi<br>")
+
+        // },3000);
+
+        //-------setInterval--------lopping upon time
+        // let a =0;
+
+        // setInterval(()=>{
+        //     a+=1
+        //     document.write(a+"<br>")
+
+        // },3000);
+
+        //-------setTimeout-------No looping only one time
+        // setTimeout(()=>{
+
+        //      document.write("Hello");
+        //      document.write("Hello");
+        //      document.write("Hello");
+        //      document.write("Hello");
+        //      document.write("Hello");
+        
+        // },2000);
+
+        setTimeout(() => {
+            let severData = [
+                                
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+                {name:"htet ko",age:32,job:"programmer"},
+            ]
+            console.log(severData);
+            severData.forEach((sever)=>{
+                console.log(sever);
+                document.write(sever.name + "<br>")
+            });
+        }, 2000);
+
+
+        // let severDatas = [
+                                
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //         {name:"htet ko",age:32,job:"programmer"},
+        //     ]
+
+        // severDatas.forEach(sd => {
+        //     console.log(sd.name)
+            
+        // });
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
