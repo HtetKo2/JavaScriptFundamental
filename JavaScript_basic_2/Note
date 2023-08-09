@@ -1,0 +1,13 @@
+// Note
+
+//console.log("2"+3)
+// let abc = 32;
+
+// let          =   reserved keyword ****cannot use it as a variable name
+// abc          =   Variable name
+// 32           =   assign value
+// +,-,*,%,/    =   operator
+// ("2"+3)      =   function
+// NaN          =   not a nunber
+
+// ``           =   backtick sing  (\n =next line,\t =tab)
