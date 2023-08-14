@@ -9,5 +9,12 @@
 // +,-,*,%,/    =   operator
 // ("2"+3)      =   function
 // NaN          =   not a nunber
+// i<4          =   condition
 
 // ``           =   backtick sing  (\n =next line,\t =tab)
+// {}           =   block
+
+
+
+// extension  
+//live server
